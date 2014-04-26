@@ -12,7 +12,7 @@ import scala.util.Random
  *
  */
 
-object PiComputer {
+class PiComputer {
   val R: Int = 1
 
   def computePi(iteration: Int): Double = {
@@ -51,13 +51,16 @@ object PiComputer {
     } while (Math.abs(Math.PI - pi) / Math.PI > precision)
     (pi, totalIteration)
   }
+}
 
+object PiComputer {
   def main(args: Array[String]) {
     val count = 500000
-    val pi = PiComputer.computePi(count)
+    val computer = new PiComputer
+    val pi = computer.computePi(count)
     printf("PI is %f after iterating %d times!\n", pi, count)
 
-    val pi_iteration = PiComputer.computePi(0.0000001)
+    val pi_iteration = computer.computePi(0.0000001)
     printf("PI is %f after iterating %d times!\n", pi_iteration._1, pi_iteration._2)
   }
 }
