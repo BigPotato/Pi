@@ -6,7 +6,6 @@
         <option name="compileOrder" value="ScalaThenJava" />
         <option name="compilerLibraryLevel" value="Project" />
         <option name="compilerLibraryName" value="Maven: org.scala-lang:scala-compiler-bundle:2.10.0" />
-        <option name="compilerOptions" value="-make:transitive -dependencyfile $MODULE_DIR$/target/.scala_dependencies" />
         <option name="vmOptions" value="" />
       </configuration>
     </facet>
@@ -19,6 +18,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
